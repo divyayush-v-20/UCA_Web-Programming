@@ -1,4 +1,23 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'react-router-dom'
+// import { createBrowserRouter } from 'react-router-dom';
+
 function App(){
+
+
+  // this is how to define routes
+  // const route = createBrowserRouter([
+  //   {
+  //     path : "/",
+  //     element = <ExampleElement/>
+  //   },
+  //   {
+  //     path : "/signup",
+  //     element = <SignupPage/>
+  //   }
+  // ])
+
+
   let productsList = [
     {name : "product 1", price : 999}, 
     {name : "product 2", price : 299},
