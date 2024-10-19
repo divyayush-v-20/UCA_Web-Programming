@@ -1,0 +1,7 @@
+Hooks :
+    -Hooks can only be called at the top level of the component
+    -Hook function can internal other calls
+
+Normal Functions :
+    -Can be called anywhere
+    -Normal functions can't call Hooks.
