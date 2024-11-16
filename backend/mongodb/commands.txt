@@ -1,0 +1,28 @@
+
+admin> use classprojectdb
+switched to db classprojectdb
+classprojectdb> show collections
+
+classprojectdb> db.products.insert({})
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('672ef213c67ec454c20d8190') }
+}
+classprojectdb> dp.products.insertOne({productName : "P1", productPrice : 1000})
+ReferenceError: dp is not defined
+classprojectdb> db.products.insertOne({productName : "P1", productPrice : 1000})
+{
+  acknowledged: true,
+  insertedId: ObjectId('672ef245c67ec454c20d8191')
+}
+classprojectdb> db.products.find()
+[
+  { _id: ObjectId('672ef213c67ec454c20d8190') },
+  {
+    _id: ObjectId('672ef245c67ec454c20d8191'),
+    productName: 'P1',
+    productPrice: 1000
+  }
+]
+classprojectdb>
